@@ -1,0 +1,10 @@
+15:52:39 **** Build of configuration Debug for project processor_baseline_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51618 C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/engs109_fpgaOMP.xpfm standalone_domain C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/engs109_fpgaOMP.xpfm --sys_config engs109_fpgaOMP --bif C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline_system/Debug/system.bif --bitstream C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline/_ide/bitstream/processor_alone.bit --elf C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline/Debug/processor_baseline.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline/_ide/bitstream/processor_alone.bit
+Running C:/Xilinx/Vitis/2021.2/bin/bootgen  -image C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+15:52:45 Build Finished (took 5s.815ms)
+

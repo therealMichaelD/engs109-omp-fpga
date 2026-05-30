@@ -1,0 +1,30 @@
+16:23:23 **** Build of configuration Debug for project processor_baseline ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/correlation.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/correlation.o" -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ffast-math -IC:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/sw/engs109_fpgaOMP/standalone_domain/bspinclude/include -MMD -MP -MF"src/correlation.d" -MT"src/correlation.o" -o "src/correlation.o" "../src/correlation.c"
+'Finished building: ../src/correlation.c'
+' '
+'Building file: ../src/main_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/main_zynq.o" -mcpu=cortex-a9 -mfpu=neon -mfloat-abi=hard -ffast-math -IC:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/sw/engs109_fpgaOMP/standalone_domain/bspinclude/include -MMD -MP -MF"src/main_zynq.d" -MT"src/main_zynq.o" -o "src/main_zynq.o" "../src/main_zynq.c"
+'Finished building: ../src/main_zynq.c'
+' '
+'Building target: processor_baseline.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/sw/engs109_fpgaOMP/standalone_domain/bsplib/lib -o "processor_baseline.elf"  ./src/correlation.o ./src/main_zynq.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: processor_baseline.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size processor_baseline.elf  |tee "processor_baseline.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 183303	   2548	  22640	 208491	  32e6b	processor_baseline.elf
+'Finished building: processor_baseline.elf.size'
+' '
+
+16:23:25 Build Finished (took 1s.799ms)
+

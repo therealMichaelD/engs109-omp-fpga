@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;processor_baseline/src/omp_baseline.c&apos;" deleteContents="false" description="Delete resource &apos;processor_baseline/src/omp_baseline.c&apos;" element1="/processor_baseline/src/omp_baseline.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1780165293650"/>&#x0A;<refactoring comment="Delete resource &apos;processor_baseline/src/baseline_data.h&apos;" deleteContents="false" description="Delete resource &apos;processor_baseline/src/baseline_data.h&apos;" element1="/processor_baseline/src/baseline_data.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1780166312508"/>
+</session>

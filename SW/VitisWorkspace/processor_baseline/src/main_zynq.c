@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include "xtime_l.h"
+#include "baseline_data.h"
+#define M_LEN 128
+#define N_ATOMS 256
+int correlation_pass(const float *D, const float *r, float *out_val);  // from omp_baseline.c
+int main(void) {
+    float val = 0.0f;
+    volatile int sink = 0;          /* keeps the optimizer from deleting the loop */
+    const int REPS = 1000;
+    /* warm the caches so the first-call cold miss isn't in the measured window */
+    for (int i = 0; i < 10; i++) sink += correlation_pass(D_data, r_data, &val);
+    XTime t0, t1;
+    XTime_GetTime(&t0);
+    for (int i = 0; i < REPS; i++)
+        sink += correlation_pass(D_data, r_data, &val);
+    XTime_GetTime(&t1);
+    double elapsed_us = ((double)(t1 - t0) / COUNTS_PER_SECOND) * 1e6;
+    double per_pass_us = elapsed_us / REPS;
+    printf("BUILD_V5 sink=%d  last_val=%f\n", sink, val);
+    printf("total=%f us over %d reps -> per-pass: %f us\n", elapsed_us, REPS, per_pass_us);
+    return 0;
+}

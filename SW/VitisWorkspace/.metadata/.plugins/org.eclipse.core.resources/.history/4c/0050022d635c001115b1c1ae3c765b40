@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="processor_baseline" location="C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/processor_baseline" platform="C:/Users/brand/Documents/engs109-omp-fpga/SW/VitisWorkspace/engs109_fpgaOMP/export/engs109_fpgaOMP/engs109_fpgaOMP.xpfm" platformUID="xilinx:zybo-z7-20::0.0(custom)" systemProject="processor_baseline_system" sysConfig="engs109_fpgaOMP" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="61a8e66f5787828ae2670aace5df68bc">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1074459577" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1370130720" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
