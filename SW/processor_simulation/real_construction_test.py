@@ -58,7 +58,7 @@ for w in [0, 5, 10, 20, 40]:
 
 # choose one and export
 W = 0    # <- set to the window index you liked from the scan
-s, sh, S = reconstruct_window(W, mac_bits=8)
+s, sh, S = reconstruct_window(W, mac_bits=11)
 print(f"Chosen Window {W}: PRD={prd(s,sh):.2f}%")
 np.save("beat_original.npy", s)
 np.save("beat_recon.npy",    sh)
